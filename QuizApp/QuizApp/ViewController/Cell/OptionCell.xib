@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="50" id="7mm-h6-m1U" customClass="OptionCell" customModule="QuizApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7mm-h6-m1U" id="QgV-bq-Hgh">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ytq-Qk-XM1">
+                        <rect key="frame" x="10" y="11" width="40" height="37.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="LiZ-vb-wNL"/>
+                            <constraint firstAttribute="height" constant="40" id="dOD-dx-TG1"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="square" catalog="system">
+                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="btnCheckClicked:" destination="7mm-h6-m1U" eventType="touchUpInside" id="sLw-g7-92o"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wsa-d4-k16">
+                        <rect key="frame" x="60" y="19.5" width="344" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="PBI-1S-og3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="Wsa-d4-k16" firstAttribute="centerY" secondItem="QgV-bq-Hgh" secondAttribute="centerY" id="7x6-5Q-n9v"/>
+                    <constraint firstItem="ytq-Qk-XM1" firstAttribute="centerY" secondItem="QgV-bq-Hgh" secondAttribute="centerY" id="DFI-Vh-gk2"/>
+                    <constraint firstAttribute="trailing" secondItem="Wsa-d4-k16" secondAttribute="trailing" constant="10" id="KJ3-TO-13p"/>
+                    <constraint firstItem="Wsa-d4-k16" firstAttribute="leading" secondItem="ytq-Qk-XM1" secondAttribute="trailing" constant="10" id="dz5-h7-HNh"/>
+                    <constraint firstItem="ytq-Qk-XM1" firstAttribute="leading" secondItem="QgV-bq-Hgh" secondAttribute="leading" constant="10" id="vfk-OU-sUG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnCheck" destination="ytq-Qk-XM1" id="SyX-e6-os4"/>
+                <outlet property="questionLabel" destination="Wsa-d4-k16" id="TwQ-3m-Mbr"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="42.857142857142854"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="square" catalog="system" width="128" height="114"/>
+    </resources>
+</document>

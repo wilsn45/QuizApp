@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="AudioQuestionSection" id="KGk-i7-Jjw" customClass="AudioQuestionSection" customModule="QuizApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zKe-NL-Qcc">
+                        <rect key="frame" x="30" y="120" width="260" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e5Z-sI-DrL">
+                        <rect key="frame" x="137.5" y="40.5" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="6cF-aN-mSA"/>
+                            <constraint firstAttribute="height" constant="46" id="frt-aM-sEo"/>
+                        </constraints>
+                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <state key="normal" backgroundImage="play.circle" catalog="system">
+                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="playPausePressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="s9L-Pk-tkZ"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zKe-NL-Qcc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="14" id="9pN-Wy-2Rl"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="zKe-NL-Qcc" secondAttribute="trailing" constant="14" id="P31-kz-fCO"/>
+                    <constraint firstItem="e5Z-sI-DrL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="40" id="bZK-Ls-JDz"/>
+                    <constraint firstItem="zKe-NL-Qcc" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="hSb-Zz-U4j"/>
+                    <constraint firstItem="zKe-NL-Qcc" firstAttribute="top" secondItem="e5Z-sI-DrL" secondAttribute="bottom" constant="34" id="yPL-Eb-oNE"/>
+                    <constraint firstItem="e5Z-sI-DrL" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="yu2-YK-UPZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="playPauseBtn" destination="e5Z-sI-DrL" id="nrn-Of-3JJ"/>
+                <outlet property="titleLabel" destination="zKe-NL-Qcc" id="r97-Ge-zkz"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="112.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="play.circle" catalog="system" width="128" height="121"/>
+    </resources>
+</document>

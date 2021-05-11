@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="19G2021" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CDAnswer" representedClassName="CDAnswer" syncable="YES" codeGenerationType="class">
+        <attribute name="contentUrl" attributeType="String"/>
+        <attribute name="correctAnswers" attributeType="Transformable"/>
+        <attribute name="id" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="options" attributeType="Transformable"/>
+        <attribute name="question" attributeType="String"/>
+        <attribute name="submitedAnswers" attributeType="Transformable"/>
+        <attribute name="type" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="CDAnswer" positionX="-63" positionY="-18" width="128" height="148"/>
+    </elements>
+</model>
